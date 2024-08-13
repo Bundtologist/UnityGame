@@ -8,7 +8,15 @@
 <meta name="dscvr:canvas:version" content="vNext">
 <!-- Open Graph Image for previewing the Canvas -->
 <meta name="og:image" content="https://my-canvas.com/preview-image.png">
-
+<meta http-equiv="Content-Security-Policy" content="
+    default-src 'self';
+    script-src 'self' https://bundtologist.github.io/unitygame 'torusapp://com.torus.Web3AuthUnity/auth' 'wasm-unsafe-eval';
+    style-src 'self' https://bundtologist.github.io/unitygame;
+    img-src 'self' https://bundtologist.github.io/unitygame data:;
+    font-src 'self' https://bundtologist.github.io/unitygame;
+    connect-src 'self' https://bundtologist.github.io/unitygame;
+    media-src 'self' https://bundtologist.github.io/unitygame;
+">
 
     <title>Unity WebGL Player | My project</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
